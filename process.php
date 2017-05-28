@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 	
 	//Validate input
 	if(!isset($user) || $user == '' || !isset($message) || $message == ''){
-		$error = "Please fill in your name and a message";
+		$error = "Please fill in your username and a message";
 		header("Location: index.php?error=".urlencode($error));
 		exit();
 	} else {
